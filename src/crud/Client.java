@@ -54,5 +54,21 @@ public class Client implements Crud {
 		}
 	}
 	
+	public void listPosts() {
+		System.out.println("\n");
+		System.out.println("YOUR POSTS");
+		System.out.println("Post Number \tPost");
+		for (int i = 0; i < posts.size(); i++) {
+			System.out.printf("%d: \t\t%s", i, posts.get(i));
+		}
+		
+		if (posts.size() == 0) {
+			System.out.println("YOU DON'T HAVE POSTS");
+		}
+		
+		System.out.println("\n");
+		
+		
+	}
 	
 }
